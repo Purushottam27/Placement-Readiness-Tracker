@@ -56,7 +56,7 @@ export default function SubjectEffort({ logs }: SubjectEffortProps) {
             dataKey="hours"
           >
             {subjectData.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} {...entry} />
             ))}
           </Pie>
           <Tooltip formatter={(value: number) => `${value.toFixed(1)} hours`} />
