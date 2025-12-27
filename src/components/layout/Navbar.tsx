@@ -1,19 +1,24 @@
 // Navigation bar component
 
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+
 import { LogOut, LayoutDashboard, FileText } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 import { useAuthOperations } from '../../hooks/useAuth';
 
 export default function Navbar() {
   const location = useLocation();
+  const navigate = useNavigate();
   const { user } = useAuth();
+
   const { signOut } = useAuthOperations();
 
   const handleSignOut = async () => {
     try {
       await signOut();
+      navigate('/');
     } catch (error) {
+
       console.error('Sign out error:', error);
     }
   };
@@ -31,22 +36,20 @@ export default function Navbar() {
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               <Link
                 to="/dashboard"
-                className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
-                  isActive('/dashboard')
-                    ? 'border-blue-500 text-gray-900'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                }`}
+                className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${isActive('/dashboard')
+                  ? 'border-blue-500 text-gray-900'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                  }`}
               >
                 <LayoutDashboard className="w-4 h-4 mr-1" />
                 Dashboard
               </Link>
               <Link
                 to="/log"
-                className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
-                  isActive('/log')
-                    ? 'border-blue-500 text-gray-900'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                }`}
+                className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${isActive('/log')
+                  ? 'border-blue-500 text-gray-900'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                  }`}
               >
                 <FileText className="w-4 h-4 mr-1" />
                 Add Log
