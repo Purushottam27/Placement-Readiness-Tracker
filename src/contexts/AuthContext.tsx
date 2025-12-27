@@ -1,6 +1,6 @@
 // Authentication context for managing user auth state
 
-import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import  { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import { User, onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../services/firebase/config';
 import { AuthUser } from '../types';

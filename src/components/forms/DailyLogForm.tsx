@@ -1,6 +1,6 @@
 // Daily preparation log form component
 
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Save, Plus, X, Calendar } from 'lucide-react';
 import { useDailyLogs } from '../../hooks/useDailyLogs';

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LogIn, Mail, Lock, User } from 'lucide-react';
+import { LogIn, Mail, Lock} from 'lucide-react';
 import { useAuthOperations } from '../../hooks/useAuth';
 
 export default function Login() {
