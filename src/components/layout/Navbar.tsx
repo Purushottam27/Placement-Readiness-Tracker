@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex">
             <Link to="/dashboard" className="flex items-center">
-              <span className="text-xl font-bold text-blue-600">AI Placement Tracker</span>
+              <span className="text-xl font-bold text-blue-600">Placement Readiness Tracker</span>
             </Link>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               <Link

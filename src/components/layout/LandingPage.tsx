@@ -28,7 +28,7 @@ export default function LandingPage() {
                                 <BarChart2 className="w-5 h-5 text-white" />
                             </div>
                             <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-700 dark:from-blue-400 dark:to-indigo-400">
-                                PrepSense
+                                Quantitative Placement Readiness Tracker
                             </span>
                         </div>
 
@@ -53,13 +53,13 @@ export default function LandingPage() {
                         <div className="lg:col-span-6 text-center lg:text-left mb-16 lg:mb-0">
                             <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-800 text-blue-600 dark:text-blue-300 text-xs font-bold tracking-wide uppercase mb-6">
                                 <span className="w-2 h-2 rounded-full bg-blue-600 mr-2 animate-pulse"></span>
-                                AI Placement Readiness Tracker
+                                Quantitative Placement Readiness Tracker
                             </div>
 
                             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 dark:text-white leading-tight mb-6">
                                 Master Your <br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">
-                                    Placement Prep
+                                    Quantitative Placement Readiness Tracker
                                 </span>
                             </h1>
 
@@ -288,7 +288,7 @@ export default function LandingPage() {
             {/* Footer */}
             <footer className="bg-white dark:bg-slate-900 py-12 border-t border-slate-100 dark:border-slate-800">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500 dark:text-slate-400 text-sm">
-                    &copy; {new Date().getFullYear()} AI Placement Readiness Tracker. All rights reserved.
+                    &copy; {new Date().getFullYear()} Quantitative Placement Readiness Tracker. All rights reserved.
                 </div>
             </footer>
 
